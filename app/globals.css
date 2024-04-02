@@ -2,26 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.gradcolor {
+  color: #FAC1F1;
+  background: -webkit-linear-gradient(#B176F2, #FAC1F1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.flip{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+@layer utilities {
+  .max-container{
+    @apply mx-auto max-w-[1512px];
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .padding-container{
+    @apply px-6 md:px-20;
+  }
+
+  .flexCenter{
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween{
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart{
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd{
+    @apply flex items-center justify-end;
+  }
+
+  .bold-40 {
+    @apply text-[2.5rem] font-[900] leading-[68px];
+  }
+
+  .bold-40a {
+    @apply text-[2rem] font-[900] leading-[50px];
+  }
+
+  .regular-20 {
+    @apply text-[1.25rem] font-[600] leading-[40.44px];
+  }
+
+  .bold-20b {
+    @apply text-[.75rem] font-[600] leading-[23.44px];
+  }
+
+  .bold-20a {
+    @apply text-[.875rem] font-[600] leading-[23.44px];
+  }
+  .bold-20 {
+    @apply text-[1.25rem] font-[600] leading-[23.44px];
+  }
+
+  .regular-16 {
+    @apply text-[.75rem] font-[500] leading-[18.75px];
+  }
+
+  .regular-16a {
+    @apply text-[.75rem] font-[600] leading-[18.75px];
+  }
+
+  .bold-16 {
+    @apply text-[1rem] font-[500] leading-[18.75px];
+  }
+
+  .bold-14 {
+    @apply text-[.875rem] font-[500] leading-5;
+  }
+
+  .bold-14-f {
+    @apply text-[.875rem] font-[400] leading-[30px];
+  }
+
+  .regular-13b {
+    @apply text-[.884rem] font-[700] leading-[12.23px];
+  }
+  .regular-13a {
+    @apply text-[.584rem] font-[700] leading-[12.23px];
+  }
+
+  .regular-13aa {
+    @apply text-[.484rem] font-[700] leading-[12.23px];
+  }
+
+  .regular-13 {
+    @apply text-[.625rem] font-[600] leading-[15.23px];
+  }
+  .bold-13 {
+    @apply text-[.813rem] font-[500] leading-[15.23px];
+  }
+
+  .bold-12 {
+    @apply text-[0.75rem] font-[400] leading-[14.06px];
+  }
 }
