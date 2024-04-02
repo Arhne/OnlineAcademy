@@ -109,7 +109,7 @@ return (
         </div>
 
         <button className="text-[8px] p-[8px] xs:3xxl:text-[10px] 3xl:text-[8px] 3xl:p-[6px] 3xxl:p-[8px] capitalize
-         rounded-[8px] flexCenter gap-1 text-white-70 bg-[#080808]" type="button">let's go <span>
+         rounded-[8px] flexCenter gap-1 text-white-70 bg-[#080808]" type="button">lets go <span>
                 <Image src="/whitearrow.svg" width={8} height={8} alt="an arrow" />
             </span>
         </button>
